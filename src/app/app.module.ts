@@ -8,6 +8,7 @@ import { MenuComponent } from './menu-header/menu.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
 import { BodyComponent } from './body-component/body-component.component';
 import { PriceSheetComponent } from './price-sheet/price-sheet.component';
+import { EstimationbillComponent } from './estimationbill/estimationbill.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PriceSheetComponent } from './price-sheet/price-sheet.component';
     MenuComponent,
     FooterComponentComponent,
     BodyComponent,
-    PriceSheetComponent
+    PriceSheetComponent,
+    EstimationbillComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,10 @@ import { PriceSheetComponent } from './price-sheet/price-sheet.component';
       {
         path: 'pricesheet',
         component: PriceSheetComponent
+      },
+      {
+        path: 'estimation',
+        component: EstimationbillComponent
       }
     ])
   ],
