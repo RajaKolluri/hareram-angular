@@ -1,0 +1,8 @@
+
+.a {
+	text-decoration : underline;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+	background-color : white;
+}
