@@ -12,6 +12,8 @@ import { BodyComponent } from './body-component/body-component.component';
 import { PriceSheetComponent } from './price-sheet/price-sheet.component';
 import { EstimationbillComponent } from './estimationbill/estimationbill.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { PriceSheetService } from './price-sheet/price-sheet.service';
 
 @NgModule({
@@ -28,6 +30,7 @@ import { PriceSheetService } from './price-sheet/price-sheet.service';
     BrowserModule,
     FormsModule,
     HttpModule,
+    HttpClientModule,
     JsonpModule,
     RouterModule.forRoot([
       {
