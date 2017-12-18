@@ -1,5 +1,9 @@
 <div>
   <label class="control-label">Search Item</label>
-	<input id="search_txt" class="search_txt form-control input-sm" (keypress)="getPriceSheet()" />
+	<input [(ngModel)] = "searchText" id="search_txt" class="search_txt form-control input-sm" (keyup)="getPriceSheet()" />
 	<span id="search" class="glyphicon glyphicon-search" (click)="getPriceSheet()"></span>
+</div>
+
+<div>
+	{{displayItem | uppercase}}
 </div>
